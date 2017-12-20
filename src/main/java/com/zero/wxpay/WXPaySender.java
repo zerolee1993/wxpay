@@ -1,10 +1,6 @@
 package com.zero.wxpay;
 
-import com.alibaba.fastjson.JSONObject;
 import com.github.wxpay.sdk.WXPay;
-import com.github.wxpay.sdk.WXPayConstants;
-import com.github.wxpay.sdk.WXPayUtil;
-import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;

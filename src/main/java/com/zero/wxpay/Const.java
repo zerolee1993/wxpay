@@ -12,17 +12,17 @@ public class Const {
     /**
      * APPID
      */
-    public static final String APPID = "wx79e850ab659bb39a";
+    public static final String APPID = "wx79**********b39a";
 
     /**
      * 商户ID
      */
-    public static final String MCH_ID = "1241847902";
+    public static final String MCH_ID = "124****902";
 
     /**
      * API秘钥
      */
-    public static final String KEY = "2f6a6ac682bb4a14947e8928620db6c6";
+    public static final String KEY = "2f6a************************b6c6";
 
     /**
      * 证书地址
@@ -32,7 +32,7 @@ public class Const {
     /**
      * 统一下单回调地址
      */
-    public static final String DO_UNIFIEDORDER_NOTIFY_URL= "http://mcp-test.sinowaycredit.com:8089/sinoway_mcpstrade/imateMobileOriginalData";
+    public static final String DO_UNIFIEDORDER_NOTIFY_URL= "http://yoursystem/youraction";
 
     /**
      * 交易类型，扫码支付固定为NATIVE
