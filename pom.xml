@@ -29,7 +29,15 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>3.0.1</version>
     </dependency>
-
+      
+      <!--  单元测试的jar包 -->
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.12</version>
+          <!--<scope>test</scope>-->
+      </dependency>
+      
   </dependencies>
   
   <build>

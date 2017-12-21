@@ -24,9 +24,25 @@ public class WXPaySender {
      */
     private WXPayConfigImpl config;
 
-    public WXPaySender() throws Exception {
+    /**
+     * 单例模式：当前类实例
+     */
+    private static WXPaySender INSTANCE;
+
+    private WXPaySender() throws Exception {
         config = WXPayConfigImpl.getInstance();
         wxpay = new WXPay(config);
+    }
+
+    public static WXPaySender getInstance() throws Exception{
+        if (INSTANCE == null) {
+            synchronized (WXPaySender.class) {
+                if (INSTANCE == null) {
+                    INSTANCE = new WXPaySender();
+                }
+            }
+        }
+        return INSTANCE;
     }
 
     /**
@@ -105,7 +121,6 @@ public class WXPaySender {
         Map<String, String> result = null;
         try {
             result = wxpay.refund(data);
-            System.out.println(result);
         } catch (Exception e) {
             e.printStackTrace();
         }
